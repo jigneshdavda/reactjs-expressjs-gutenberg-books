@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Montserrat, Regular';
+  src: local('Montserrat, Regular'), url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat, Semi Bold';
+  src: local('Montserrat, Semi Bold'), url('./assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+:root{
+  --primary-color: #5E56E7;
+  --secondary-color: #F8F7FF;
+  --grey-light: #F0F0F6;
+  --grey-medium: #A0A0A0;
+  --grey-dark: #333333;
+}
+
+body {
+  font-family: 'Montserrat, Regular';
+  font-size: 16px;
+  color: var(--grey-dark);
+  overflow-x: hidden;
+  background-color: var(--secondary-color);
+}
+
+.book-card {
+  width: 114px;
+  height: 162px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+}
+
+.book-card > img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.book-name {
+  font-size: 12px;
+}
+
+.book-author {
+  font-size: 12px;
+}
+
+.search-box {
+  font-size: 16px;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  border: none;
+  background-image: url("./assets/images/Search.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+  text-indent: 28px;
+}
+
+.search-box::placeholder {
+  font-weight: 700;
+}
+
+.search-box:focus {
+  outline-color: var(--primary-color);
+}
+
+.genre-card {
+  font-size: 20px;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Montserrat, Semi Bold';
+  font-size: 48px;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-family: 'Montserrat, Semi Bold';
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.brand-header {
+  background-image: url("./assets/images/Pattern.svg");
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.brand-genre-header {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+p {
+  font-weight: 600;
+}
+
+.genre-header {
+  display: inline-flex;
+  align-items: center;
+}
+
+.genre-icon, .category-title {
+  padding: 5px;
+}
+
+.search-box-block {
+  padding: 12px;
+}
+
+.go-back {
+  cursor: pointer;
+}
