@@ -1,14 +1,14 @@
 import axios from "axios";
 import { SET_DATA } from "./actiontypes";
 
-export const fetchData = (category_name) => {
+export const fetchData = (category_name, search_data) => {
   const url = "http://localhost:8080/api/books";
   const postData = JSON.stringify({
     book_number: "",
     language: "",
     mime_type: "",
-    author: "",
-    title: "",
+    author: search_data,
+    title: search_data,
     topic: category_name,
     limit: "25",
   });

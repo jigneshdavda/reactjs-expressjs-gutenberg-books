@@ -2,6 +2,7 @@ import "../App.css";
 import Genre from "../components/cards/genre";
 import { APP_NAME, APP_DESCRIPTION } from "../util/constants";
 
+// Constant Genres to show on homepage
 const genres = [
   "Fiction",
   "Philosophy",
@@ -26,7 +27,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             {genres.map((genre, index) => (
-              <Genre key={index} title={genre.toUpperCase().trim()} />
+              <Genre key={index} title={genre} />
             ))}
           </div>
         </div>
